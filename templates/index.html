@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Counter</h1>
+        <p>{{session['count'] + 1}} times</p>
+        <div>
+            <button class="btn" id="btn1" onclick="location.href = '/change'">
+                + 2</button>
+            
+            <button class="btn" id="btn2" onclick="location.href = '/reset'">
+                Clear</button>
+        </div>
+    </div>
+    <style>
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn {
+            margin: 0px 10px;
+            padding: 10px 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+        #btn1 {
+            background-color: royalblue;
+        }
+        #btn2 {
+            background-color: red;
+        }
+        #form {
+            margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</body>
+</html>
